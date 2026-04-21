@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="">
+<div class="page-shell"><aside class="sidebar">
+    <h1>playlist service</h1>
+    <nav>
+        <a class="sidebar__nav-link" href="users.html">users</a>
+        <a class="sidebar__nav-link" href="playlists.html">playlists</a>
+        <a class="sidebar__nav-link" href="create-playlist.html">create playlist</a>
+        <a class="sidebar__nav-link" href="index.html">logout</a>
+    </nav>
+</aside><main class="main-content"><header class="topbar"><h2>users listing</h2><button class="button">create user</button></header>
+<section class="notification notification--error">Example error notification: failed to remove user.</section>
+<section class="panel">
+<table class="table">
+<thead><tr><th>username</th><th>role</th><th>status</th><th>actions</th></tr></thead>
+<tbody>
+<tr><td>admin</td><td>admin</td><td><span class="badge badge--success">active</span></td><td>view / edit / delete</td></tr>
+<tr><td>anna</td><td>regular</td><td><span class="badge badge--success">active</span></td><td>view / edit / delete</td></tr>
+<tr><td>mark</td><td>regular</td><td><span class="badge badge--muted">inactive</span></td><td>view / edit / delete</td></tr>
+</tbody>
+</table>
+</section>
+<section class="modal" style="margin-top:20px;">
+<h3>create user dialog</h3>
+<div class="grid grid--two">
+<div class="form-field"><label>username</label><input class="form-field__input" type="text"></div>
+<div class="form-field"><label>role</label><select class="form-field__select"><option>admin</option><option>regular</option></select></div>
+<div class="form-field"><label>password</label><input class="form-field__input" type="password"></div>
+<div class="form-field"><label>confirm password</label><input class="form-field__input" type="password"></div>
+</div>
+<button class="button">ok</button> <button class="button button--secondary">cancel</button>
+</section></main></div>
+</body>
+</html>
